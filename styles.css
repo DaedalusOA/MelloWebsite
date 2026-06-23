@@ -110,8 +110,6 @@ p  { font-size: 16px; font-weight: 300; line-height: 1.75; opacity: 0.75; }
   opacity: 0.65;
 }
 
-.topnav a:hover { opacity: 1; background: var(--brand-06); }
-
 .topnav a.getApp {
   opacity: 1;
   background: var(--rose);
@@ -119,8 +117,6 @@ p  { font-size: 16px; font-weight: 300; line-height: 1.75; opacity: 0.75; }
   padding: 8px 20px;
   font-weight: 500;
 }
-
-.topnav a.getApp:hover { background: var(--rose-hover); }
 
 .logoGroup {
   display: flex;
@@ -251,20 +247,12 @@ main > section {
   color: #fff !important;
 }
 
-.download:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 28px rgba(92, 69, 64, 0.28);
-}
 
 .insta {
   background: transparent;
   border: 1.5px solid var(--brand-20);
 }
 
-.insta:hover {
-  background: var(--brand-06);
-  transform: translateY(-2px);
-}
 
 /* Screenshots */
 .rightland {
@@ -285,10 +273,6 @@ main > section {
   transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
-.todo:hover {
-  transform: translateY(-5px) scale(1.01);
-  
-}
 
 
 /* =============================================
@@ -323,13 +307,6 @@ main > section {
   overflow: hidden;
 }
 
-.featureCard:hover {
-  border: 1px solid var(--brand-50);
-  transform: translateY(-3px) scale(1.001);
-  
-
-  /*box-shadow: 0 16px 48px rgba(92, 69, 64, 0.09);*/
-}
 
 .featureCard img {
   height: 460px;
@@ -338,10 +315,6 @@ main > section {
   border: 2px solid rgba(0, 0, 0, 0.07);
   transition: transform 0.35s ease;
   flex-shrink: 0;
-}
-
-.featureCard:hover img {
-  transform: scale(1.02) rotate(1.5deg);
 }
 
 .sideFeatureCardRow {
@@ -413,7 +386,7 @@ main > section {
   background: var(--surface);
     border: 1px solid #644d47;
   border-radius: var(--r-xl);
-  padding: 48px;
+  padding: 28px;
   padding-top: var(--section-v) !important;
   margin-top: 80px !important;
   margin-bottom: 0 !important;
@@ -438,11 +411,10 @@ main > section {
 }
 
 .footer a {
-  font-size: 14px;
+  font-size: 16px;
   opacity: 0.6;
   transition: opacity 0.2s;
 }
-.footer a:hover { opacity: 1; }
 
 .social {
   display: flex;
@@ -515,6 +487,13 @@ main > section {
   padding: 0 !important;
 }
 
+.ffeatureCheckmarks{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+
+}
+
 .backbutton {
   display: none;
   padding: 10px 22px;
@@ -527,10 +506,6 @@ main > section {
   transition: background 0.2s, transform 0.2s;
 }
 
-.backbutton:hover {
-  background: var(--brand-06);
-  transform: translateX(-2px);
-}
 
 
 /* =============================================
@@ -591,17 +566,32 @@ main > section {
 }
 
 @media (max-width: 600px) {
-  :root { --gutter: 16px; --section-v: 70px; }
+  :root { --gutter: 28px; --section-v: 70px; }
 
   .leftland h1 { font-size: 36px; letter-spacing: -0.5px; }
 
   .featureCard { flex-direction: column-reverse; }
-  .featureCard img { height: auto; width: 100%; max-height: 280px; object-fit: cover; }
+  .featureCard img {
+    
+
+       width: 50%;
+  height: auto;
+  flex-shrink: 0;
+  display: block;
+  margin: 0 auto;
+      height: auto;
+
+  flex-shrink: 0;
+  
+     }
 
   .footer { padding: 28px; padding-top: 28px !important; border-radius: var(--r-lg); }
 
   .topDownload { flex-direction: column; gap: 10px; }
   .topDownload a { text-align: center; }
+
+
+
 }
 
 
@@ -615,8 +605,51 @@ main > section {
   }
 
   .topnav a.getApp:hover { transform: scale(1.04); }
+  .backbutton:hover {
+  background: var(--brand-06);
+  transform: translateX(-2px);
+  
 }
 
+.topnav a:hover { opacity: 1; background: var(--brand-06); }
+.topnav a.getApp:hover { background: var(--rose-hover); }
+.footer a:hover { opacity: 1; }
+
+.download:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(92, 69, 64, 0.28);
+}
+
+
+.insta:hover {
+  background: var(--brand-06);
+  transform: translateY(-2px);
+}
+
+
+.todo:hover {
+  transform: translateY(-5px) scale(1.01);
+  
+}
+
+
+.featureCard:hover {
+  border: 1px solid var(--brand-50);
+  transform: translateY(-3px) scale(1.001);
+  
+
+  /*box-shadow: 0 16px 48px rgba(92, 69, 64, 0.09);*/
+}
+
+
+.featureCard:hover img {
+  transform: scale(1.02) rotate(1.5deg);
+}
+
+
+
+
+}
 
 
 
