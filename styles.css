@@ -1,0 +1,477 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: "Google Sans", sans-serif;
+  color: #644d47;
+}
+
+html, body {
+ overscroll-behavior: none;
+}
+html {
+  scrollbar-width: none; /* Firefox */
+}
+
+html::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.layeredTopNav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+
+
+main > section {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 180px;
+  margin-bottom: 180px;
+
+}
+
+main{
+  margin-top: 150px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.topnav {
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: center;
+}
+
+.topnavInner {
+  width: 100%;
+  max-width: 1400px;
+  height: 80px;
+
+  display: flex;      /* <-- add this */
+  align-items: center;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.spacerBtBar {
+  flex: 1;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #644d47;
+ 
+  text-align: center;
+  padding: 0px 30px;
+  text-decoration: none;
+  font-size: 17px;
+   letter-spacing: 0.2px;
+  
+ transition: all 0.25s ease;
+}
+
+
+.topnav a.getApp {
+  padding: 10px 20px;
+  background-color: white;
+  
+
+  border: 2px solid #644d477b;
+  border-radius: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+   transition: all 0.25s ease;
+}
+
+
+/* Add a color to the active/current link */
+.topnav p.MelloTopLogo {
+  font-size: 30px;
+  color: rgb(144, 114, 114);
+  font-weight: 500;
+}
+
+
+
+.topwingother {
+   transform: scaleX(-1);
+}
+
+.logoGroup {
+  display: flex;
+  align-items: center;
+  gap: 0px;
+}
+
+.logoGroup a {
+  padding: 0 8px;
+}
+.logoGroup img {
+  padding: 0 0px;
+  width: auto;
+  height: 34px;
+}
+
+.LongSpacer{
+  height: 2px;
+  background-color: rgb(210, 210, 210);
+}
+
+.logoGroup img {
+  transition: transform 0.3s ease;
+}
+
+
+
+
+.toplandingpage{
+  display: flex;
+  justify-content: center;
+ 
+
+}
+
+
+.leftland {
+  flex:1.5;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.rightland{
+  flex:1;
+   
+}
+
+h1{
+  font-size: 50px;
+}
+h3{
+  font-weight: 200;
+  opacity: 0.8;
+}
+
+.largelogoGroup {
+  display: flex;
+  align-items: center;
+  gap: 0px;
+}
+
+.largelogoGroup a {
+  padding: 0 8px;
+}
+.largelogoGroup img {
+  padding: 0 0px;
+  width: auto;
+  height: 74px;
+}
+
+.highlight {
+  background: #f7e9e7;
+  padding-left: 15px;
+  padding-right: 15px;
+   transition: all 0.25s ease;
+}
+
+
+.rightland{
+  display: flex;
+  gap: 18px;
+  flex-direction: column;
+   padding-left: 80px;
+ 
+
+  
+ 
+}
+
+.todo {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  transition: all 0.25s ease;
+ 
+}
+
+.sample{
+  opacity: 0.2;
+}
+
+.topDownload{
+ 
+  display: flex;
+  gap: 20px;
+}
+
+.topDownload a{
+  font-size: 20px;
+  
+  
+  text-decoration: none;
+  padding: 5px 20px;
+  
+  
+
+  border: 1.5px solid #644d47;
+  border-radius: 20px;
+ 
+
+   transition: all 0.25s ease;
+}
+.download{
+  background-color:  #f7e9e7;
+}
+.insta{
+  background-color: #f7f7f7;
+}
+
+.footer{
+  padding: 10px 20px;
+  background-color: #f7f7f7;
+  
+
+  border: 2px solid #644d477b;
+  border-radius: 20px;
+  transition: all 0.25s ease;
+  margin-bottom: 20px;
+  margin-top: 50px;
+
+}
+
+.aboutstack{
+  display: flex;
+  flex-direction: row;
+  padding-top: 50px;
+  opacity: 0.8;
+}
+.footer a{
+  text-decoration: none;
+
+}
+.logoGroup a {
+  font-size: 30px;
+}
+.ftdescrpt{
+  opacity: 0.7;
+}
+
+.social{
+  display: flex;
+  gap:30px;
+}
+.buisness{
+   display: flex;
+  gap:30px;
+}
+
+.Features{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 60px;
+  
+}
+
+
+.featureCard{
+  display: flex;
+  flex-direction: row;
+  flex:1;
+  background-color: #f7f7f7;
+  padding:30px;
+  
+  border: 1.5px solid #644d4772;
+  border-radius: 30px;
+  gap:30px;
+ 
+
+   transition: all 0.25s ease;
+}
+
+.featureCard img{
+  height: 500px;
+  width: auto;
+   border: 2.5px solid #000000;
+  border-radius: 30px;
+   transition: all 0.25s ease;
+
+  
+
+
+}
+
+
+.sideFeatureCardRow h1 {
+  width: 60px;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+
+  font-size: 30px;
+  font-weight: 400;
+
+  background-color: #f7e9e7;
+  border-radius: 50%;
+}
+
+.sideFeatureCardRow{
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+}
+
+.featureCheckmarks{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-end;
+  gap:5px;
+
+}
+
+.backbutton{
+  padding:10px;
+ background-color: #f5f5f553;
+  border-radius: 40px;
+   border: 1.5px solid #644d4757;
+
+  
+  width: 30%;
+  font-weight: 300;
+  display: none;
+  text-decoration: none;
+  font-size: 20px;
+  
+
+}
+
+
+.sectiontitle{
+  margin-bottom:30px;
+}
+
+@media (max-width: 1100px) {
+  .topnav a:not(.MelloTopLogo):not(.getApp) {
+    display: none;
+  }
+  .toplandingpage{
+    flex-direction: column;
+  }
+ .rightland{
+  padding-left: 0px;
+  margin-top: 50px;
+ }
+ .todo{
+  
+   max-width: 700px;
+ }
+ .aboutstack{
+  flex-direction: column;
+  gap:5px
+ }
+ .Features{
+  grid-template-columns: repeat(1, 1fr);
+ }
+ .backbutton{
+   display: inline;
+ }
+}
+
+.privacySection {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  
+   background-color: #f5f5f553;
+  padding:30px;
+  border-radius: 40px;
+   border: 1.5px solid #644d4757;
+
+  
+ 
+
+
+}
+
+.largePrivacy{
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  gap:15px;
+  
+
+}
+.sp{
+  height: 50px;
+}
+
+
+.privSpacer{
+  height: 2px;
+  width: 100%;
+  background-color: rgba(199, 199, 199, 0.408);
+}
+.privacySection h1 {
+  font-size: 22px;
+  font-weight: 500;
+
+}
+
+.privacySection h3 {
+  font-size: 18px;
+  line-height: 1.7;
+  font-weight: 300;
+  opacity: 0.8;
+}
+
+
+
+@media (hover: hover) {
+  .featureCard:hover {
+    border: 1.5px solid #644d47;
+    background-color: #f7f7f782;
+    transform: scale(1.005);
+  }
+
+  .featureCard img:hover {
+    transform: scale(1.01) rotate(2deg);
+  }
+
+  .todo:hover {
+    transform: scale(1.05);
+  }
+
+  .topnav a:not(.MelloTopLogo):hover {
+    transform: translateY(-3px);
+    font-weight: 600;
+  }
+
+  .topnav a.getApp:hover,
+  .topDownload a:hover {
+    transform: scale(1.08);
+    box-shadow:
+      0 0 0 4px rgba(100,77,71,0.08),
+      0 10px 25px rgba(100,77,71,0.15);
+  }
+
+  .highlight:hover {
+    background: #DEE6FF;
+    border-radius: 20px;
+    font-weight: 300;
+  }
+}
+
+
+
+
