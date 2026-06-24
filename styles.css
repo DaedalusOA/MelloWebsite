@@ -305,6 +305,7 @@ main > section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 45px;
+  margin-top: 30px;
 }
 
 .featureCard {
@@ -396,13 +397,18 @@ main > section {
 /* =============================================
    FOOTER
    ============================================= */
+  .footerarea{
+    margin-top: 40px;
+    
+   }
+   
 .footer {
   background: var(--surface);
     border: 1px solid #644d47;
   border-radius: var(--r-xl);
   padding: 28px;
-  padding-top: var(--section-v) !important;
-  margin-top: 80px !important;
+  
+  
   margin-bottom: 0 !important;
 }
 
@@ -442,6 +448,69 @@ main > section {
   display: flex;
   gap: 28px;
 }
+
+/* =============================================
+   CUSTIMZATION
+   ============================================= */
+
+
+.sectionsubtitle{
+  font-size: 20px;
+  width: 50%;
+
+}
+
+.altsectiontitle{
+  display: flex;
+  gap: 15px;
+}
+
+.altsectiontitle h2{
+  font-size: 40px;
+}
+
+.sec{
+  opacity: 0.4;
+}
+
+
+.exampleScroller{
+  display: flex;
+  gap:60px;
+  margin-top:30px;
+  margin: 0 auto;
+  overflow-x: auto;
+  overflow-y: hidden;
+    scrollbar-width: none;
+     scroll-behavior: smooth;
+}
+
+.examplecard{
+  padding: 25px;
+  background: var(--surface);
+  border-radius: 1px;
+  
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   margin-top: 30px;
+   margin-bottom: 30px;
+}
+
+.examplecard img{
+  height: 600px;
+  padding: 10px;
+  background-color: white;
+  border: 1px solid #644d4759;
+  border-radius: 20px;
+}
+
+#first{
+  margin-left:300px;
+}
+
+
+
 
 
 /* =============================================
@@ -610,9 +679,11 @@ main > section {
    ============================================= */
 @media (max-width: 1100px) {
   :root {
-    --gutter: 20px;
+    --gutter: 30px;
     --section-v: 90px;
   }
+
+
 
   .Waitlistcontainer{
     flex-direction: column;
@@ -649,8 +720,7 @@ main > section {
 }
 .featuresec{
   max-width: 600px;
-  margin: 0 auto;
-  justify-items: center;
+ 
 
 }
 
@@ -664,6 +734,13 @@ main > section {
      padding: 36px; padding-top: 36px !important; 
      max-width: 600px;
     }
+    .custumizationSection,
+  .footerarea {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 }
 
 @media (max-width: 600px) {
@@ -798,6 +875,9 @@ main > section {
 
 
 }
+
+
+
 
 
 
