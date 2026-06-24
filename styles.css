@@ -138,6 +138,19 @@ p  { font-size: 16px; font-weight: 300; line-height: 1.75; opacity: 0.75; }
   letter-spacing: 0;
 }
 
+.MelloTopLogoWait{
+  font-family: "Google Sans", sans-serif;
+  font-size: 20px;
+  padding-top: 6px;
+  font-weight: 400;
+  color: #5c45405c;
+  opacity: 1 !important;
+  letter-spacing: 0;
+  kerning: -1px;
+  
+
+}
+
 
 /* =============================================
    MAIN WRAPPER
@@ -311,8 +324,9 @@ main > section {
 .featureCard img {
   height: 460px;
   width: auto;
-  border-radius: var(--r-lg);
-  border: 2px solid rgba(0, 0, 0, 0.07);
+  padding:5px;
+  border-radius: 23px;
+  border: 3px solid rgba(0, 0, 0, 0.07);
   transition: transform 0.35s ease;
   flex-shrink: 0;
 }
@@ -395,7 +409,7 @@ main > section {
 .mainStack {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 5px;
 }
 
 .ftdescrpt { opacity: 0.5; font-size: 15px; }
@@ -506,6 +520,89 @@ main > section {
   transition: background 0.2s, transform 0.2s;
 }
 
+/* =============================================
+   Waitlist
+   ============================================= */
+
+.centerwait{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center; /* horizontal */
+  align-items: center;     /* vertical */
+  padding-bottom:200px;
+}
+.Waitlistcontainer{
+  display: flex;
+  flex-direction: row;
+  border: 1.5px solid var(--brand-20);
+  gap:60px;
+
+  padding: 50px;
+  border-radius: 30px;
+  background-color: var(--surface);
+  max-width: 1100px;
+
+  margin: 0 auto;
+  margin-top:70px;
+
+}
+
+.Waitlistinput{
+   width: 100%;
+  padding: 19px 16px;
+  margin-top: 10px;
+  
+
+  background: rgb(239, 239, 239);
+  border: 2px solid transparent;
+  border-radius: 17px;
+  border: 1px solid var(--brand-20);
+
+  font-size: 1.1rem;
+  color: var(--text);
+
+  transition: all 0.2s ease;
+
+}
+
+.Waitlistcontainer h1{
+  font-size: 50px;
+  font-weight: 600;
+}
+.Waitlistcontainer h3{
+  opacity: 0.4;
+}
+
+.Waitlistcontainer p{
+ font-size: 1.2rem;
+}
+
+   
+.Waitright{
+  flex:1;
+   display: flex;
+   flex-direction: column;
+}
+   
+.Waitleft{
+  flex:1;
+   display: flex;
+   flex-direction: column;
+    gap:20px
+  
+}
+
+.joinwaitlistButt{
+  padding: 19px 16px;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  background-color: var(--brand);
+  color: white;
+  margin-top: 5px;
+   border: 5px solid var(--rose);
+   transition: all 0.25s ease;
+}
+
 
 
 /* =============================================
@@ -515,6 +612,10 @@ main > section {
   :root {
     --gutter: 20px;
     --section-v: 90px;
+  }
+
+  .Waitlistcontainer{
+    flex-direction: column;
   }
 
   .topnav a:not(.getApp) { display: none; }
@@ -585,11 +686,56 @@ main > section {
   
      }
 
-  .footer { padding: 28px; padding-top: 28px !important; border-radius: var(--r-lg); }
+  .footer { padding: 28px; border-radius: var(--r-lg); }
 
   .topDownload { flex-direction: column; gap: 10px; }
   .topDownload a { text-align: center; }
 
+
+.Waitlistcontainer h1{
+  font-size: 30px;
+  font-weight: 600;
+}
+.Waitlistcontainer h3{
+  opacity: 0.4;
+  font-size: 0.8rem;
+}
+
+.Waitlistcontainer p{
+ font-size: 0.8rem;
+
+}
+.Waitlistcontainer{
+   padding: 20px;
+}
+
+
+.Waitlistinput{
+  padding: 15px 16px;
+  margin-top: 10px;
+  font-size: 0.8rem;
+
+}
+.joinwaitlistButt{
+  font-size: 0.8rem;
+
+}
+.Waitlistcontainer{
+  gap: 10px;
+ 
+}
+.Waitleft{
+  gap: 5px;
+}
+
+
+.MelloTopLogoWait{
+ 
+  font-size: 12px;
+  
+  
+
+}
 
 
 }
@@ -649,7 +795,10 @@ main > section {
 
 
 
+
+
 }
+
 
 
 
